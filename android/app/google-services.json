@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "657078459688",
+    "firebase_url": "https://evateverywhere777-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "evateverywhere777",
+    "storage_bucket": "evateverywhere777.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657078459688:android:64e28e315af4e3fc18041d",
+        "android_client_info": {
+          "package_name": "com.onyxdatasystems.evateverywhere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657078459688-tu6154g7m6c0731c2gp2f76rkrjeu606.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onyxdatasystems.evateverywhere",
+            "certificate_hash": "d76c57e72924216b19b6cb0272ba1c75d4c57e7e"
+          }
+        },
+        {
+          "client_id": "657078459688-ojfho384abiukucdfq20ki7ahrb9jpg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHPN8BYv-GjpLd9EQqrbhyGqD8qRcd9B4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657078459688-ojfho384abiukucdfq20ki7ahrb9jpg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "657078459688-d9993j3v9hm123qf5nnl2jepcjgtt7og.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.onyxdatasystems.evateverywhere"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
