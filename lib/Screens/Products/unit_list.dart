@@ -145,7 +145,7 @@ class _UnitListState extends State<UnitList> {
                     physics: const NeverScrollableScrollPhysics(),
                     query:
                         // ignore: deprecated_member_use
-                        FirebaseDatabase.instance.reference().child(constUserId).child('Units'),
+                        FirebaseDatabase.instance.ref().child(constUserId).child('Units'),
                     itemBuilder: (context, snapshot, animation, index) {
                       final json = snapshot.value as Map<dynamic, dynamic>;
                       final title = UnitModel.fromJson(json);

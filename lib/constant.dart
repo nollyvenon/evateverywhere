@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:typed_data';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -8,10 +7,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:evatsignature/Provider/profile_provider.dart';
 import 'package:evatsignature/model/product_model.dart';
-import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:restart_app/restart_app.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import 'Screens/tax report/tax_model.dart';
 import 'currency.dart';

@@ -1,9 +1,7 @@
 import 'dart:async';
-import 'dart:typed_data';
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:intl/intl.dart';
-import 'package:nb_utils/nb_utils.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
@@ -13,7 +11,6 @@ import '../../../../const_commas.dart';
 import '../../../../constant.dart';
 import '../../../../model/personal_information_model.dart';
 import '../../../../model/transition_model.dart';
-import 'loss_profit_report.dart';
 import 'package:flutter/material.dart';
 
 Future<File> createAndSaveLossProfitPDF({
@@ -198,5 +195,5 @@ void shareLossProfitPDF({
     loss: loss,
     context: context,
   );
-  Share.shareFiles([pdfFile.path], text: 'Share PDF');
+  Share.shareXFiles([XFile(pdfFile.path)], text: 'Share PDF');
 }

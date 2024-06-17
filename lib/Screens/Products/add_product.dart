@@ -384,7 +384,7 @@ class AddProductState extends State<AddProduct> {
               },
               style: ButtonStyle(
                   backgroundColor:
-                      MaterialStatePropertyAll(kMainColor.withOpacity(0.2))),
+                      WidgetStatePropertyAll(kMainColor.withOpacity(0.2))),
               icon: const Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -912,7 +912,7 @@ class AddProductState extends State<AddProduct> {
                               );
                             },
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10.0,
                           ),
                           Expanded(
@@ -1467,13 +1467,13 @@ class AddProductState extends State<AddProduct> {
                                         : null;
                                     // ignore: no_leading_underscores_for_local_identifiers
                                     final DatabaseReference
-                                        _productInformationRef =
+                                        productInformationRef =
                                         FirebaseDatabase.instance
                                             // ignore: deprecated_member_use
-                                            .reference()
+                                            .ref()
                                             .child(constUserId)
                                             .child('Products');
-                                    _productInformationRef.keepSynced(true);
+                                    productInformationRef.keepSynced(true);
                                     ProductModel productModel = ProductModel(
                                       productName: productNameController.text,
                                       productCategory: productCategory,
@@ -1514,7 +1514,7 @@ class AddProductState extends State<AddProduct> {
                                           selectedGroupTaxModel?.subTaxes ?? [],
                                     );
                                     print(productModel.toJson());
-                                    _productInformationRef
+                                    productInformationRef
                                         .push()
                                         .set(productModel.toJson());
                                     Subscription.decreaseSubscriptionLimits(

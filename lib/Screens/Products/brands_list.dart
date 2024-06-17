@@ -107,7 +107,7 @@ class _BrandsListState extends State<BrandsList> {
                     shrinkWrap: true,
                     query: FirebaseDatabase.instance
                         // ignore: deprecated_member_use
-                        .reference()
+                        .ref()
                         .child(constUserId)
                         .child('Brands'),
                     itemBuilder: (context, snapshot, animation, index) {

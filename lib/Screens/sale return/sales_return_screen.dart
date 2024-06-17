@@ -27,7 +27,7 @@ import '../../model/add_to_cart_model.dart';
 
 // ignore: must_be_immutable
 class SalesReturn extends StatefulWidget {
-  SalesReturn({super.key, required this.saleTransactionModel});
+  const SalesReturn({super.key, required this.saleTransactionModel});
 
   final SalesTransitionModel saleTransactionModel;
 

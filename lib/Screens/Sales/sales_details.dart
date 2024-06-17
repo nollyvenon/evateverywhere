@@ -245,7 +245,7 @@ class _SalesDetailsState extends State<SalesDetails> {
                   EasyLoading.show(status: 'Loading...', dismissOnTap: false);
                   final DatabaseReference salesReportRef = FirebaseDatabase.instance
                       // ignore: deprecated_member_use
-                      .reference()
+                      .ref()
                       .child(constUserId)
                       .child('Sales Report');
                   SalesReport salesReport = SalesReport(customer, providerData.getTotalAmount().toString(), providerData.cartItemList.length.toString());

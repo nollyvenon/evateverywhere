@@ -1,7 +1,6 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 // import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:flutter_cart/flutter_cart.dart';
@@ -11,14 +10,12 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:evatsignature/Provider/product_provider.dart';
 import 'package:evatsignature/Screens/Customers/Model/customer_model.dart';
-import 'package:evatsignature/const_commas.dart';
 import 'package:evatsignature/constant.dart';
 import 'package:evatsignature/generated/l10n.dart' as lang;
 import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../../Provider/add_to_cart.dart';
-import '../../currency.dart';
 import '../../model/add_to_cart_model.dart';
 import '../../model/product_model.dart';
 import '../../model/transition_model.dart';

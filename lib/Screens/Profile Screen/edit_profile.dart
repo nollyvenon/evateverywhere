@@ -482,7 +482,7 @@ class _EditProfileState extends State<EditProfile> {
                           // ignore: no_leading_underscores_for_local_identifiers
                           final DatabaseReference _personalInformationRef = FirebaseDatabase.instance
                               // ignore: deprecated_member_use
-                              .reference()
+                              .ref()
                               .child(constUserId)
                               .child('Personal Information');
                           _personalInformationRef.keepSynced(true);

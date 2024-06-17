@@ -28,7 +28,6 @@ import '../../model/product_model.dart';
 import '../Warehouse/warehouse_model.dart';
 import '../tax report/tax_model.dart';
 import 'add_product.dart';
-import 'excel_upload screen.dart';
 
 class ProductList extends StatefulWidget {
   const ProductList({super.key});
@@ -468,7 +467,7 @@ class _ProductListState extends State<ProductList> with TickerProviderStateMixin
                                         )
                                             .visible(searchedProduct.isEmptyOrNull
                                                 ? true
-                                                : showAbleProducts[i].productName.toUpperCase().contains(searchedProduct!.toUpperCase()))
+                                                : showAbleProducts[i].productName.toUpperCase().contains(searchedProduct.toUpperCase()))
                                             .visible(category[index] == 'All'
                                                 ? true
                                                 : ((category[index] == 'Expiring' && showAbleProducts[i].expiringDate != null)

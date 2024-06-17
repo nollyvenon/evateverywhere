@@ -118,7 +118,7 @@ class _CreateSingleTaxState extends State<CreateSingleTax> {
                   ),
                   onSaved: (value) {},
                 ),
-                Spacer(),
+                const Spacer(),
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: SizedBox(
@@ -295,7 +295,7 @@ class _EditSingleTaxTaxState extends State<EditSingleTax> {
                   ),
                   onSaved: (value) {},
                 ),
-                Spacer(),
+                const Spacer(),
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: SizedBox(

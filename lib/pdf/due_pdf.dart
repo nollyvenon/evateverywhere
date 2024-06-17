@@ -735,5 +735,5 @@ Future<File> createAndSaveDuePDF({required DueTransactionModel transactions, req
 
 void shareDuePDF({required DueTransactionModel transactions, required PersonalInformationModel personalInformation, required BuildContext context}) async {
   final pdfFile = await createAndSaveDuePDF(context: context, personalInformation: personalInformation, transactions: transactions);
-  Share.shareFiles([pdfFile.path], text: 'Share PDF');
+  Share.shareXFiles([XFile(pdfFile.path)], text: 'Share PDF');
 }

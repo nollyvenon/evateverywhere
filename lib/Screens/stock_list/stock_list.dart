@@ -10,7 +10,6 @@ import '../../Provider/product_provider.dart';
 import '../../constant.dart';
 import '../../currency.dart';
 import '../../empty_screen_widget.dart';
-import '../../model/product_model.dart';
 import '../Warehouse/warehouse_model.dart';
 
 class StockList extends StatefulWidget {
@@ -294,7 +293,7 @@ class _StockListState extends State<StockList> {
                                   SingleChildScrollView(
                                     scrollDirection: Axis.horizontal,
                                     child: DataTable(
-                                      headingRowColor: MaterialStateColor.resolveWith((states) => kMainColor.withOpacity(0.2)),
+                                      headingRowColor: WidgetStateColor.resolveWith((states) => kMainColor.withOpacity(0.2)),
                                       border: TableBorder.all(color: kBorderColorTextField, width: 0.5),
                                       columns: <DataColumn>[
                                         DataColumn(

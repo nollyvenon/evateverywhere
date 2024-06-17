@@ -2,14 +2,12 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:share_plus/share_plus.dart';
 
-import '../Screens/Pdf/pdf_view.dart';
 import '../const_commas.dart';
 import '../constant.dart';
 import '../generate_pdf.dart';
@@ -800,7 +798,7 @@ Future<File> createAndSaveSalePDF({required SalesTransitionModel transactions, r
 
 void shareSalePDF({required SalesTransitionModel transactions, required PersonalInformationModel personalInformation, required BuildContext context}) async {
   final pdfFile = await createAndSaveSalePDF(context: context, personalInformation: personalInformation, transactions: transactions);
-  Share.shareFiles([pdfFile.path], text: 'Share PDF');
+  Share.shareXFiles([XFile(pdfFile.path)], text: 'Share PDF');
 }
 
 // Future<void> showSalesPDF({required SalesTransitionModel transactions, required PersonalInformationModel personalInformation, required BuildContext context}) async {

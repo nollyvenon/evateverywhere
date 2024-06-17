@@ -7,19 +7,15 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:intl/intl.dart';
 import 'package:evatsignature/Provider/category,brans,units_provide.dart';
 import 'package:evatsignature/Provider/product_provider.dart';
-import 'package:evatsignature/Screens/Home/home.dart';
-import 'package:evatsignature/Screens/Products/update_product.dart';
 import 'package:evatsignature/generated/l10n.dart' as lang;
 import 'package:nb_utils/nb_utils.dart';
 
-import '../../GlobalComponents/button_global.dart';
 import '../../const_commas.dart';
 import '../../constant.dart';
 import '../../currency.dart';
@@ -365,7 +361,7 @@ class _WarehouseDetailsState extends State<WarehouseDetails> with TickerProvider
                                       )
                                           .visible(searchedProduct.isEmptyOrNull
                                               ? true
-                                              : showAbleProducts[i].productName.toUpperCase().contains(searchedProduct!.toUpperCase()))
+                                              : showAbleProducts[i].productName.toUpperCase().contains(searchedProduct.toUpperCase()))
                                           .visible(category[index] == 'All'
                                               ? true
                                               : ((category[index] == 'Expiring' && showAbleProducts[i].expiringDate != null)

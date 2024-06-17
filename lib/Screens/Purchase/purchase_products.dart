@@ -1,7 +1,6 @@
 // ignore_for_file: unused_result, must_be_immutable
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 // import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:flutter_cart/flutter_cart.dart';
@@ -434,7 +433,7 @@ class _PurchaseProductsState extends State<PurchaseProducts> {
                                                         style: const TextStyle(fontSize: 16),
                                                       ),
                                                     ),
-                                                    SizedBox(width: 10.0),
+                                                    const SizedBox(width: 10.0),
                                                     Text(
                                                       lang.S.of(context).stocks,
                                                       style: const TextStyle(fontSize: 16),

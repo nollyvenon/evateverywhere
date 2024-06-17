@@ -14,9 +14,7 @@ import '../../constant.dart' as mainConstant;
 import '../../currency.dart';
 import '../../invoice_constant.dart';
 import '../../model/personal_information_model.dart';
-import '../../model/print_transaction_model.dart';
 import '../../model/transition_model.dart';
-import '../../pdf/sales_pdf.dart';
 import '../Home/home.dart';
 
 class SaleReturnDetails extends StatefulWidget {

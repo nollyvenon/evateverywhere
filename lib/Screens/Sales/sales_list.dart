@@ -84,7 +84,7 @@ class _SalesScreenState extends State<SalesScreen> {
               height: 10.0,
             ),
             DataTable(
-              headingRowColor: MaterialStateColor.resolveWith((states) => kDarkWhite),
+              headingRowColor: WidgetStateColor.resolveWith((states) => kDarkWhite),
               columns:  <DataColumn>[
                 DataColumn(
                   label: SizedBox(

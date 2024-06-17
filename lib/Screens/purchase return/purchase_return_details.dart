@@ -5,7 +5,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:evatsignature/Provider/product_provider.dart';
 import 'package:evatsignature/Screens/purchase%20return/purchase_return_pdf.dart';
-import 'package:evatsignature/Screens/sale%20return/sale_return_pdf.dart';
 import 'package:evatsignature/const_commas.dart';
 import 'package:evatsignature/generated/l10n.dart' as lang;
 import 'package:nb_utils/nb_utils.dart';
@@ -15,9 +14,7 @@ import '../../constant.dart' as mainConstant;
 import '../../currency.dart';
 import '../../invoice_constant.dart';
 import '../../model/personal_information_model.dart';
-import '../../model/print_transaction_model.dart';
 import '../../model/transition_model.dart';
-import '../../pdf/sales_pdf.dart';
 import '../Home/home.dart';
 
 class PurchaseReturnDetails extends StatefulWidget {

@@ -103,7 +103,7 @@ class _PurchaseReportScreenState extends State<PurchaseReportScreen> {
                     //   height: 10.0,
                     // ),
                     DataTable(
-                      headingRowColor: MaterialStateColor.resolveWith((states) => kDarkWhite),
+                      headingRowColor: WidgetStateColor.resolveWith((states) => kDarkWhite),
                       columns:  <DataColumn>[
                         DataColumn(
                           label: Text(

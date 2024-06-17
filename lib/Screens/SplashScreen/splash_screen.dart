@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:evatsignature/Screens/SplashScreen/on_board.dart';
 import 'package:evatsignature/constant.dart';
-import 'package:evatsignature/generated/l10n.dart' as lang;
 import 'package:nb_utils/nb_utils.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';

@@ -2482,7 +2482,7 @@ class GeneratePdf1 {
                       (myFormat.format(double.tryParse(saleTransactionModel.elementAt(i).lossProfit!.isNegative ? ' 0' : saleTransactionModel.elementAt(i).lossProfit!.toStringAsFixed(2)) ?? 0)),
                       (myFormat.format(double.tryParse(saleTransactionModel.elementAt(i).lossProfit!.isNegative ? saleTransactionModel.elementAt(i).lossProfit!.toStringAsFixed(2) : ' 0') ?? 0)),
                     ],
-                  <String>['', '', '', 'Sub Total:', '${saleAmount.toString()}', '${profit.toString()}', '${loss.toString()}'],
+                  <String>['', '', '', 'Sub Total:', (saleAmount.toString()), (profit.toString()), (loss.toString())],
                 ],
               ),
             ],

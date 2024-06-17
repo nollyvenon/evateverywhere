@@ -9,12 +9,12 @@ class CompletePayment extends StatefulWidget {
   final TapServices services;
   final String url;
   const CompletePayment({
-    Key? key,
+    super.key,
     required this.onSuccess,
     required this.onError,
     required this.services,
     required this.url,
-  }) : super(key: key);
+  });
 
   @override
   // ignore: library_private_types_in_public_api

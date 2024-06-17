@@ -50,7 +50,7 @@ class _PurchaseContactState extends State<PurchaseContact> {
             ),
             query: FirebaseDatabase.instance
                 // ignore: deprecated_member_use
-                .reference()
+                .ref()
                 .child(constUserId)
                 .child('Customers'),
             itemBuilder: (context, snapshot, animation, index) {

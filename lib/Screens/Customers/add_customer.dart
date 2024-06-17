@@ -477,7 +477,7 @@ class _AddCustomerState extends State<AddCustomer> {
                                 // ignore: no_leading_underscores_for_local_identifiers
                                 final DatabaseReference _customerInformationRef = FirebaseDatabase.instance
                                 // ignore: deprecated_member_use
-                                    .reference()
+                                    .ref()
                                     .child(constUserId)
                                     .child('Customers');
                                 _customerInformationRef.keepSynced(true);

@@ -6,7 +6,6 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:evatsignature/Screens/tax%20report/tax_model.dart';
-import 'package:evatsignature/Screens/tax%20report/tax_report.dart';
 import 'package:evatsignature/constant.dart';
 import 'package:nb_utils/nb_utils.dart';
 
@@ -208,7 +207,7 @@ class _AddTaxGroupState extends State<AddTaxGroup> {
                                                     shape: RoundedRectangleBorder(
                                                       borderRadius: BorderRadius.circular(6.0),
                                                     ),
-                                                    fillColor: MaterialStateProperty.all(
+                                                    fillColor: WidgetStateProperty.all(
                                                       subTaxList.contains(category) ? kMainColor : Colors.transparent,
                                                     ),
                                                     visualDensity: const VisualDensity(horizontal: -4, vertical: -4),

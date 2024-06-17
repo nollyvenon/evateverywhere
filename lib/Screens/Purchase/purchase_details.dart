@@ -192,7 +192,7 @@ class _PurchaseDetailsState extends State<PurchaseDetails> {
                         // ignore: no_leading_underscores_for_local_identifiers
                         final DatabaseReference _purchaseReportRef = FirebaseDatabase.instance
                         // ignore: deprecated_member_use
-                            .reference()
+                            .ref()
                             .child(constUserId)
                             .child('Purchase Report');
                         PurchaseReport purchaseReport = PurchaseReport(customer, cart.total.toString(), cart.total.toString());

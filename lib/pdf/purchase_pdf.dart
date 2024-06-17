@@ -763,5 +763,5 @@ Future<File> createAndSaveSalePDF({required PurchaseTransactionModel transaction
 
 void sharePurchasePDF({required PurchaseTransactionModel transactions, required PersonalInformationModel personalInformation, required BuildContext context}) async {
   final pdfFile = await createAndSaveSalePDF(context: context, personalInformation: personalInformation, transactions: transactions);
-  Share.shareFiles([pdfFile.path], text: 'Share PDF');
+  Share.shareXFiles([XFile(pdfFile.path)], text: 'Share PDF');
 }

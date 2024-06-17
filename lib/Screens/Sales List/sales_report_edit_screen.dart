@@ -558,7 +558,7 @@ class _SalesReportEditScreenState extends State<SalesReportEditScreen> {
                                     children: [
                                       Text(
                                         getAllTaxFromCartList(cart: providerData.cartItemList)[index].name,
-                                        style: TextStyle(fontSize: 16),
+                                        style: const TextStyle(fontSize: 16),
                                       ),
                                       Row(
                                         children: [

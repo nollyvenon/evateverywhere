@@ -11,7 +11,6 @@ import 'package:evatsignature/constant.dart';
 import 'package:evatsignature/model/product_model.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:syncfusion_flutter_xlsio/xlsio.dart' as xls;
 
 import '../../GlobalComponents/Model/category_model.dart';
 import '../../currency.dart';
@@ -159,7 +158,7 @@ class _ExcelUploaderState extends State<ExcelUploader> {
                       )),
                 ),
                 ElevatedButton(
-                  style: const ButtonStyle(backgroundColor: MaterialStatePropertyAll(kMainColor)),
+                  style: const ButtonStyle(backgroundColor: WidgetStatePropertyAll(kMainColor)),
                   onPressed: () async {
                     if (file == null) {
                       await pickAndUploadFile(ref: ref);

@@ -1235,5 +1235,5 @@ Future<File> purchaseReturnPdf(
 void sharePurchaseReturnPDF(
     {required PurchaseTransactionModel transactions, required PersonalInformationModel personalInformation, required BuildContext context}) async {
   final pdfFile = await purchaseReturnPdf(context: context, personalInformation: personalInformation, transactions: transactions);
-  Share.shareFiles([pdfFile.path], text: 'Share PDF');
+  Share.shareXFiles([XFile(pdfFile.path)], text: 'Share PDF');
 }

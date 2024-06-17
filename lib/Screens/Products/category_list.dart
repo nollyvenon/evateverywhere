@@ -112,7 +112,7 @@ class _CategoryListState extends State<CategoryList> {
                     physics: const NeverScrollableScrollPhysics(),
                     query: FirebaseDatabase.instance
                         // ignore: deprecated_member_use
-                        .reference()
+                        .ref()
                         .child(constUserId)
                         .child('Categories'),
                     itemBuilder: (context, snapshot, animation, index) {

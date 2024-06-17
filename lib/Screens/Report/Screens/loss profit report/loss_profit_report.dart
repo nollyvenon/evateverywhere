@@ -115,7 +115,7 @@ class _LossProfitReportState extends State<LossProfitReport> {
                               ),
                               hoverColor: kMainColor.withOpacity(0.1),
                               style: ButtonStyle(
-                                  shape: MaterialStatePropertyAll(
+                                  shape: WidgetStatePropertyAll(
                                 RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(6.0),
                                 ),
@@ -141,7 +141,7 @@ class _LossProfitReportState extends State<LossProfitReport> {
                               ),
                               hoverColor: kMainColor.withOpacity(0.1),
                               style: ButtonStyle(
-                                  shape: MaterialStatePropertyAll(
+                                  shape: WidgetStatePropertyAll(
                                 RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(6.0),
                                 ),

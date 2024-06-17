@@ -148,7 +148,7 @@ class _ExpenseListState extends State<ExpenseList> {
                       return SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
                         child: DataTable(
-                          headingRowColor: MaterialStateColor.resolveWith((states) => kMainColor.withOpacity(0.2)),
+                          headingRowColor: WidgetStateColor.resolveWith((states) => kMainColor.withOpacity(0.2)),
                           border: TableBorder.all(color: kBorderColorTextField,width: 0.5),
                           columns:  <DataColumn>[
                             DataColumn(

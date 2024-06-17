@@ -60,9 +60,9 @@ class DailyTransactionModel {
         'paymentOut': paymentOut,
         'remainingBalance': remainingBalance,
         'id': id,
-        'saleTransactionModel': saleTransactionModel != null ? saleTransactionModel!.toJson() : null,
-        'purchaseTransactionModel': purchaseTransactionModel != null ? purchaseTransactionModel!.toJson() : null,
-        'dueTransactionModel': dueTransactionModel != null ? dueTransactionModel!.toJson() : null,
+        'saleTransactionModel': saleTransactionModel?.toJson(),
+        'purchaseTransactionModel': purchaseTransactionModel?.toJson(),
+        'dueTransactionModel': dueTransactionModel?.toJson(),
         'incomeModel': null,
         'expenseModel': expenseModel?.toJson(),
       };

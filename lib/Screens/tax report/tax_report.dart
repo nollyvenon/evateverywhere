@@ -141,7 +141,7 @@ class _TaxReportState extends State<TaxReport> {
                                         size: 15,
                                         color: kWhite,
                                       ),
-                                      SizedBox(width: 4),
+                                      const SizedBox(width: 4),
                                       Text(
                                         'Add',
                                         style: kTextStyle.copyWith(color: kWhite, fontSize: 12, fontWeight: FontWeight.bold),
@@ -156,7 +156,7 @@ class _TaxReportState extends State<TaxReport> {
                           SizedBox(
                             width: MediaQuery.of(context).size.width,
                             child: DataTable(
-                              headingRowColor: MaterialStateColor.resolveWith((states) => Colors.white),
+                              headingRowColor: WidgetStateColor.resolveWith((states) => Colors.white),
                               border: TableBorder.all(borderRadius: BorderRadius.circular(2.0), color: kBorderColorTextField),
                               dividerThickness: 1.0,
                               dataTextStyle: kTextStyle.copyWith(color: kTitleColor),
@@ -246,7 +246,7 @@ class _TaxReportState extends State<TaxReport> {
                                                     size: 15,
                                                     color: kWhite,
                                                   ),
-                                                  SizedBox(width: 4),
+                                                  const SizedBox(width: 4),
                                                   Text(
                                                     'Edit',
                                                     style: kTextStyle.copyWith(color: kWhite, fontSize: 12, fontWeight: FontWeight.bold),
@@ -310,22 +310,22 @@ class _TaxReportState extends State<TaxReport> {
                                                                             Navigator.pop(dialogContext);
                                                                           },
                                                                           style: ButtonStyle(
-                                                                            shape: MaterialStateProperty.all(
+                                                                            shape: WidgetStateProperty.all(
                                                                               RoundedRectangleBorder(
                                                                                   borderRadius: BorderRadius.circular(8.0), side: const BorderSide(color: kMainColor)),
                                                                             ),
-                                                                            overlayColor: MaterialStateProperty.all<Color>(
+                                                                            overlayColor: WidgetStateProperty.all<Color>(
                                                                               kMainColor.withOpacity(0.1),
                                                                             ),
-                                                                            shadowColor: MaterialStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
-                                                                            minimumSize: MaterialStateProperty.all<Size>(
+                                                                            shadowColor: WidgetStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
+                                                                            minimumSize: WidgetStateProperty.all<Size>(
                                                                               const Size(150, 50),
                                                                             ),
-                                                                            backgroundColor: MaterialStateProperty.all<Color>(kWhite),
+                                                                            backgroundColor: WidgetStateProperty.all<Color>(kWhite),
 
                                                                             // Change background color
                                                                             textStyle:
-                                                                                MaterialStateProperty.all<TextStyle>(const TextStyle(color: Colors.white)), // Change text color
+                                                                                WidgetStateProperty.all<TextStyle>(const TextStyle(color: Colors.white)), // Change text color
                                                                             // Add more properties as needed
                                                                           ),
                                                                           child: Text(
@@ -347,19 +347,19 @@ class _TaxReportState extends State<TaxReport> {
                                                                             Navigator.pop(dialogContext);
                                                                           },
                                                                           style: ButtonStyle(
-                                                                            shape: MaterialStateProperty.all(
+                                                                            shape: WidgetStateProperty.all(
                                                                               RoundedRectangleBorder(
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                               ),
                                                                             ),
-                                                                            overlayColor: MaterialStateProperty.all<Color>(
+                                                                            overlayColor: WidgetStateProperty.all<Color>(
                                                                               kWhite.withOpacity(0.1),
                                                                             ),
-                                                                            shadowColor: MaterialStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
-                                                                            minimumSize: MaterialStateProperty.all<Size>(Size(150, 50)),
-                                                                            backgroundColor: MaterialStateProperty.all<Color>(kMainColor),
+                                                                            shadowColor: WidgetStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
+                                                                            minimumSize: WidgetStateProperty.all<Size>(const Size(150, 50)),
+                                                                            backgroundColor: WidgetStateProperty.all<Color>(kMainColor),
                                                                             // Change background color
-                                                                            textStyle: MaterialStateProperty.all<TextStyle>(TextStyle(color: Colors.white)), // Change text color
+                                                                            textStyle: WidgetStateProperty.all<TextStyle>(const TextStyle(color: Colors.white)), // Change text color
                                                                             // Add more properties as needed
                                                                           ),
                                                                           child: Text(
@@ -385,7 +385,7 @@ class _TaxReportState extends State<TaxReport> {
                                                     size: 17,
                                                     color: kWhite,
                                                   ),
-                                                  SizedBox(width: 4),
+                                                  const SizedBox(width: 4),
                                                   Text(
                                                     'Delete',
                                                     style: kTextStyle.copyWith(color: kWhite, fontSize: 12, fontWeight: FontWeight.bold),
@@ -398,8 +398,8 @@ class _TaxReportState extends State<TaxReport> {
                                       ),
                                     ),
                                   ],
-                                  color: MaterialStateColor.resolveWith(
-                                    (Set<MaterialState> states) {
+                                  color: WidgetStateColor.resolveWith(
+                                    (Set<WidgetState> states) {
                                       // Use index to determine whether the row is even or odd
                                       return index % 2 == 0 ? Colors.grey.shade100 : Colors.white;
                                     },
@@ -457,7 +457,7 @@ class _TaxReportState extends State<TaxReport> {
                                         size: 15,
                                         color: kWhite,
                                       ),
-                                      SizedBox(width: 4),
+                                      const SizedBox(width: 4),
                                       Text(
                                         'Add',
                                         style: kTextStyle.copyWith(color: kWhite, fontSize: 12, fontWeight: FontWeight.bold),
@@ -473,7 +473,7 @@ class _TaxReportState extends State<TaxReport> {
                           SingleChildScrollView(
                             scrollDirection: Axis.horizontal,
                             child: DataTable(
-                              headingRowColor: MaterialStateColor.resolveWith((states) => Colors.white),
+                              headingRowColor: WidgetStateColor.resolveWith((states) => Colors.white),
                               border: TableBorder.all(borderRadius: BorderRadius.circular(2.0), color: kBorderColorTextField),
                               dividerThickness: 1.0,
                               dataTextStyle: kTextStyle.copyWith(color: kTitleColor),
@@ -581,7 +581,7 @@ class _TaxReportState extends State<TaxReport> {
                                                     size: 15,
                                                     color: kWhite,
                                                   ),
-                                                  SizedBox(width: 4),
+                                                  const SizedBox(width: 4),
                                                   Text(
                                                     'Edit',
                                                     style: kTextStyle.copyWith(color: kWhite, fontSize: 12, fontWeight: FontWeight.bold),
@@ -645,22 +645,22 @@ class _TaxReportState extends State<TaxReport> {
                                                                             Navigator.pop(dialogContext);
                                                                           },
                                                                           style: ButtonStyle(
-                                                                            shape: MaterialStateProperty.all(
+                                                                            shape: WidgetStateProperty.all(
                                                                               RoundedRectangleBorder(
                                                                                   borderRadius: BorderRadius.circular(8.0), side: const BorderSide(color: kMainColor)),
                                                                             ),
-                                                                            overlayColor: MaterialStateProperty.all<Color>(
+                                                                            overlayColor: WidgetStateProperty.all<Color>(
                                                                               kMainColor.withOpacity(0.1),
                                                                             ),
-                                                                            shadowColor: MaterialStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
-                                                                            minimumSize: MaterialStateProperty.all<Size>(
+                                                                            shadowColor: WidgetStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
+                                                                            minimumSize: WidgetStateProperty.all<Size>(
                                                                               const Size(150, 50),
                                                                             ),
-                                                                            backgroundColor: MaterialStateProperty.all<Color>(kWhite),
+                                                                            backgroundColor: WidgetStateProperty.all<Color>(kWhite),
 
                                                                             // Change background color
                                                                             textStyle:
-                                                                                MaterialStateProperty.all<TextStyle>(const TextStyle(color: Colors.white)), // Change text color
+                                                                                WidgetStateProperty.all<TextStyle>(const TextStyle(color: Colors.white)), // Change text color
                                                                             // Add more properties as needed
                                                                           ),
                                                                           child: Text(
@@ -682,19 +682,19 @@ class _TaxReportState extends State<TaxReport> {
                                                                             Navigator.pop(dialogContext);
                                                                           },
                                                                           style: ButtonStyle(
-                                                                            shape: MaterialStateProperty.all(
+                                                                            shape: WidgetStateProperty.all(
                                                                               RoundedRectangleBorder(
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                               ),
                                                                             ),
-                                                                            overlayColor: MaterialStateProperty.all<Color>(
+                                                                            overlayColor: WidgetStateProperty.all<Color>(
                                                                               kWhite.withOpacity(0.1),
                                                                             ),
-                                                                            shadowColor: MaterialStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
-                                                                            minimumSize: MaterialStateProperty.all<Size>(Size(150, 50)),
-                                                                            backgroundColor: MaterialStateProperty.all<Color>(kMainColor),
+                                                                            shadowColor: WidgetStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
+                                                                            minimumSize: WidgetStateProperty.all<Size>(const Size(150, 50)),
+                                                                            backgroundColor: WidgetStateProperty.all<Color>(kMainColor),
                                                                             // Change background color
-                                                                            textStyle: MaterialStateProperty.all<TextStyle>(TextStyle(color: Colors.white)), // Change text color
+                                                                            textStyle: WidgetStateProperty.all<TextStyle>(const TextStyle(color: Colors.white)), // Change text color
                                                                             // Add more properties as needed
                                                                           ),
                                                                           child: Text(
@@ -720,7 +720,7 @@ class _TaxReportState extends State<TaxReport> {
                                                     size: 17,
                                                     color: kWhite,
                                                   ),
-                                                  SizedBox(width: 4),
+                                                  const SizedBox(width: 4),
                                                   Text(
                                                     'Delete',
                                                     style: kTextStyle.copyWith(color: kWhite, fontSize: 12, fontWeight: FontWeight.bold),
@@ -733,8 +733,8 @@ class _TaxReportState extends State<TaxReport> {
                                       ),
                                     ),
                                   ],
-                                  color: MaterialStateColor.resolveWith(
-                                    (Set<MaterialState> states) {
+                                  color: WidgetStateColor.resolveWith(
+                                    (Set<WidgetState> states) {
                                       // Use index to determine whether the row is even or odd
                                       return index % 2 == 0 ? Colors.grey.shade100 : Colors.white;
                                     },

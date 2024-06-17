@@ -7,7 +7,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:evatsignature/Language/language_screen.dart';
 import 'package:evatsignature/Screens/Profile%20Screen/profile_details.dart';
 import 'package:evatsignature/Screens/Settings/feedback_screen.dart';
-import 'package:evatsignature/Screens/SplashScreen/splash_screen.dart';
 import 'package:evatsignature/generated/l10n.dart' as lang;
 import 'package:nb_utils/nb_utils.dart';
 import 'package:restart_app/restart_app.dart';
@@ -55,7 +54,7 @@ class _SettingScreenState extends State<SettingScreen> {
     String? data = prefs.getString('currency');
     if (!data.isEmptyOrNull) {
       for (var element in items) {
-        if (element.substring(0, 2).contains(data!) || element.substring(0, 5).contains(data!)) {
+        if (element.substring(0, 2).contains(data!) || element.substring(0, 5).contains(data)) {
           setState(() {
             dropdownValue = element;
           });

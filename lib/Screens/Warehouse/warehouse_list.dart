@@ -8,7 +8,6 @@ import 'package:evatsignature/Screens/Warehouse/wirehouse_details.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../../Provider/product_provider.dart';
-import '../../const_commas.dart';
 import '../../constant.dart';
 import '../../currency.dart';
 import '../../model/product_model.dart';
@@ -290,22 +289,22 @@ class _WarehouseListState extends State<WarehouseList> {
                                                                               Navigator.pop(bc);
                                                                             },
                                                                             style: ButtonStyle(
-                                                                              shape: MaterialStateProperty.all(
+                                                                              shape: WidgetStateProperty.all(
                                                                                 RoundedRectangleBorder(
                                                                                     borderRadius: BorderRadius.circular(8.0),
                                                                                     side: const BorderSide(color: kMainColor)),
                                                                               ),
-                                                                              overlayColor: MaterialStateProperty.all<Color>(
+                                                                              overlayColor: WidgetStateProperty.all<Color>(
                                                                                 kMainColor.withOpacity(0.1),
                                                                               ),
-                                                                              shadowColor: MaterialStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
-                                                                              minimumSize: MaterialStateProperty.all<Size>(
+                                                                              shadowColor: WidgetStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
+                                                                              minimumSize: WidgetStateProperty.all<Size>(
                                                                                 const Size(150, 50),
                                                                               ),
-                                                                              backgroundColor: MaterialStateProperty.all<Color>(kWhite),
+                                                                              backgroundColor: WidgetStateProperty.all<Color>(kWhite),
 
                                                                               // Change background color
-                                                                              textStyle: MaterialStateProperty.all<TextStyle>(
+                                                                              textStyle: WidgetStateProperty.all<TextStyle>(
                                                                                   const TextStyle(color: Colors.white)), // Change text color
                                                                               // Add more properties as needed
                                                                             ),
@@ -329,20 +328,20 @@ class _WarehouseListState extends State<WarehouseList> {
                                                                               Navigator.pop(dialogContext);
                                                                             },
                                                                             style: ButtonStyle(
-                                                                              shape: MaterialStateProperty.all(
+                                                                              shape: WidgetStateProperty.all(
                                                                                 RoundedRectangleBorder(
                                                                                   borderRadius: BorderRadius.circular(8.0),
                                                                                 ),
                                                                               ),
-                                                                              overlayColor: MaterialStateProperty.all<Color>(
+                                                                              overlayColor: WidgetStateProperty.all<Color>(
                                                                                 kWhite.withOpacity(0.1),
                                                                               ),
-                                                                              shadowColor: MaterialStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
-                                                                              minimumSize: MaterialStateProperty.all<Size>(Size(150, 50)),
-                                                                              backgroundColor: MaterialStateProperty.all<Color>(kMainColor),
+                                                                              shadowColor: WidgetStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
+                                                                              minimumSize: WidgetStateProperty.all<Size>(const Size(150, 50)),
+                                                                              backgroundColor: WidgetStateProperty.all<Color>(kMainColor),
                                                                               // Change background color
-                                                                              textStyle: MaterialStateProperty.all<TextStyle>(
-                                                                                  TextStyle(color: Colors.white)), // Change text color
+                                                                              textStyle: WidgetStateProperty.all<TextStyle>(
+                                                                                  const TextStyle(color: Colors.white)), // Change text color
                                                                               // Add more properties as needed
                                                                             ),
                                                                             child: Text(
@@ -396,7 +395,7 @@ class _WarehouseListState extends State<WarehouseList> {
                 ),
               ),
               bottomNavigationBar: Container(
-                padding: EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(20.0),
                 color: Colors.white,
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width,
@@ -422,19 +421,19 @@ class _WarehouseListState extends State<WarehouseList> {
                       );
                     },
                     style: ButtonStyle(
-                      shape: MaterialStateProperty.all(
+                      shape: WidgetStateProperty.all(
                         RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                       ),
-                      overlayColor: MaterialStateProperty.all<Color>(
+                      overlayColor: WidgetStateProperty.all<Color>(
                         kWhite.withOpacity(0.1),
                       ),
-                      shadowColor: MaterialStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
-                      minimumSize: MaterialStateProperty.all<Size>(Size(150, 50)),
-                      backgroundColor: MaterialStateProperty.all<Color>(kMainColor),
+                      shadowColor: WidgetStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
+                      minimumSize: WidgetStateProperty.all<Size>(const Size(150, 50)),
+                      backgroundColor: WidgetStateProperty.all<Color>(kMainColor),
                       // Change background color
-                      textStyle: MaterialStateProperty.all<TextStyle>(TextStyle(color: Colors.white)), // Change text color
+                      textStyle: WidgetStateProperty.all<TextStyle>(const TextStyle(color: Colors.white)), // Change text color
                       // Add more properties as needed
                     ),
                     child: Text(
@@ -528,7 +527,7 @@ class _EditWareState extends State<EditWare> {
                     'Edit Warehouse',
                     style: kTextStyle.copyWith(color: kTitleColor, fontWeight: FontWeight.bold, fontSize: 16),
                   ),
-                  IconButton(onPressed: () => Navigator.pop(context), icon: Icon(Icons.clear))
+                  IconButton(onPressed: () => Navigator.pop(context), icon: const Icon(Icons.clear))
                 ],
               ),
             ),
@@ -605,19 +604,19 @@ class _EditWareState extends State<EditWare> {
                           }
                         },
                         style: ButtonStyle(
-                          shape: MaterialStateProperty.all(
+                          shape: WidgetStateProperty.all(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                           ),
-                          overlayColor: MaterialStateProperty.all<Color>(
+                          overlayColor: WidgetStateProperty.all<Color>(
                             kWhite.withOpacity(0.1),
                           ),
-                          shadowColor: MaterialStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
-                          minimumSize: MaterialStateProperty.all<Size>(Size(150, 50)),
-                          backgroundColor: MaterialStateProperty.all<Color>(kMainColor),
+                          shadowColor: WidgetStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
+                          minimumSize: WidgetStateProperty.all<Size>(const Size(150, 50)),
+                          backgroundColor: WidgetStateProperty.all<Color>(kMainColor),
                           // Change background color
-                          textStyle: MaterialStateProperty.all<TextStyle>(TextStyle(color: Colors.white)), // Change text color
+                          textStyle: WidgetStateProperty.all<TextStyle>(const TextStyle(color: Colors.white)), // Change text color
                           // Add more properties as needed
                         ),
                         child: Text(
@@ -674,7 +673,7 @@ class _AddWareState extends State<AddWare> {
                     'Edit Warehouse',
                     style: kTextStyle.copyWith(color: kTitleColor, fontWeight: FontWeight.bold, fontSize: 16),
                   ),
-                  IconButton(onPressed: () => Navigator.pop(context), icon: Icon(Icons.clear))
+                  IconButton(onPressed: () => Navigator.pop(context), icon: const Icon(Icons.clear))
                 ],
               ),
             ),
@@ -744,19 +743,19 @@ class _AddWareState extends State<AddWare> {
                           }
                         },
                         style: ButtonStyle(
-                          shape: MaterialStateProperty.all(
+                          shape: WidgetStateProperty.all(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                           ),
-                          overlayColor: MaterialStateProperty.all<Color>(
+                          overlayColor: WidgetStateProperty.all<Color>(
                             kWhite.withOpacity(0.1),
                           ),
-                          shadowColor: MaterialStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
-                          minimumSize: MaterialStateProperty.all<Size>(Size(150, 50)),
-                          backgroundColor: MaterialStateProperty.all<Color>(kMainColor),
+                          shadowColor: WidgetStateProperty.all<Color>(kMainColor.withOpacity(0.1)),
+                          minimumSize: WidgetStateProperty.all<Size>(const Size(150, 50)),
+                          backgroundColor: WidgetStateProperty.all<Color>(kMainColor),
                           // Change background color
-                          textStyle: MaterialStateProperty.all<TextStyle>(TextStyle(color: Colors.white)), // Change text color
+                          textStyle: WidgetStateProperty.all<TextStyle>(const TextStyle(color: Colors.white)), // Change text color
                           // Add more properties as needed
                         ),
                         child: Text(

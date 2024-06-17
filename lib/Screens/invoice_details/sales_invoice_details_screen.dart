@@ -1,8 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 import 'package:community_material_icon/community_material_icon.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:evatsignature/Provider/product_provider.dart';

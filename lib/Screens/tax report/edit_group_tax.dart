@@ -32,7 +32,7 @@ class _EditSingleTaxTaxState extends State<EditGroupTax> {
   num calculateTotalRate(List<TaxModel> subTaxList) {
     rate = 0.0;
     for (var taxModel in subTaxList) {
-      rate += taxModel.taxRate!;
+      rate += taxModel.taxRate;
     }
     return rate;
   }
@@ -244,7 +244,7 @@ class _EditSingleTaxTaxState extends State<EditGroupTax> {
                                                       shape: RoundedRectangleBorder(
                                                         borderRadius: BorderRadius.circular(6.0),
                                                       ),
-                                                      fillColor: MaterialStateProperty.all(
+                                                      fillColor: WidgetStateProperty.all(
                                                         subTaxList.contains(category) ? kMainColor : Colors.transparent,
                                                       ),
                                                       visualDensity: const VisualDensity(horizontal: -4, vertical: -4),

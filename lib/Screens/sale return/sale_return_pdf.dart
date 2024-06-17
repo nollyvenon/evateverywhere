@@ -1098,5 +1098,5 @@ Future<File> saleReturnPdf({required SalesTransitionModel transactions, required
 
 void shareSaleReturnPDF({required SalesTransitionModel transactions, required PersonalInformationModel personalInformation, required BuildContext context}) async {
   final pdfFile = await saleReturnPdf(context: context, personalInformation: personalInformation, transactions: transactions);
-  Share.shareFiles([pdfFile.path], text: 'Share PDF');
+  Share.shareXFiles([XFile(pdfFile.path)], text: 'Share PDF');
 }

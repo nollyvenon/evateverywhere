@@ -230,7 +230,7 @@ class _AddDeliveryState extends State<AddDelivery> {
                     // ignore: no_leading_underscores_for_local_identifiers
                     final DatabaseReference _deliveryInformationRef = FirebaseDatabase.instance
                         // ignore: deprecated_member_use
-                        .reference()
+                        .ref()
                         .child(constUserId)
                         .child('Delivery Addresses');
                     DeliveryModel deliveryModel = DeliveryModel(firstName, lastname, emailAddress, phoneNumber, initialCountry, addressLocation, addressType);

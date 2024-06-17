@@ -26,6 +26,7 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 apply plugin: 'com.google.gms.google-services'
 
 android {
+    namespace "com.onyxdatasystems.evateverywhere"
     compileSdkVersion 34
     packagingOptions {
         pickFirst 'lib/x86/libc++_shared.so'
@@ -41,8 +42,8 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.onyxdatasystems.evatsignature"
-        minSdkVersion 21
+        applicationId "com.onyxdatasystems.evateverywhere"
+        minSdkVersion 23
         targetSdkVersion 31
         multiDexEnabled true
         versionCode flutterVersionCode.toInteger()

@@ -343,7 +343,7 @@ class _PurchaseReturnScreenState extends State<PurchaseReturnScreen> {
                                                     textAlign: TextAlign.center,
                                                     keyboardType: TextInputType.phone,
                                                     onChanged: (value) {
-                                                      if (returnList[index].productStock!.toInt() < value.toInt()) {
+                                                      if (returnList[index].productStock.toInt() < value.toInt()) {
                                                         EasyLoading.showError('Out of Stock');
                                                         quantityController.clear();
                                                       } else if (value == '') {
